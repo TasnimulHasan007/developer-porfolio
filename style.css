@@ -26,6 +26,10 @@ body{
     align-items: center;
 }
 
+.section-3{
+    min-height: calc(100vh - 13rem);
+}
+
 .section-1{
     background: url(./images/top-banner.png) no-repeat;
 }
@@ -99,6 +103,11 @@ p{
     background: url(./images/dream-bg.png) no-repeat right bottom;
 }
 
+#ex{
+    text-align: center;
+    margin: 2.5rem;
+}
+
 .section-3{
     background: url(./images/exp-bg.png) no-repeat left top;
 }
@@ -116,17 +125,19 @@ p{
 }
 
 .box-1{
-    z-index: 1;
     border-left: 0.5rem solid;
     border-image: var(--gradient-2);
     border-image-slice: 1;
 }
 
 .box-2{
-    z-index: 2;
     border-left: 0.5rem solid;
     border-image: var(--gradient-1);
     border-image-slice: 1;
+}
+
+footer p{
+    text-align: center;
 }
 
 @media (max-width: 875px) {
@@ -156,5 +167,11 @@ p{
     }
     .section-2{
         background-position: right;
+    }
+    .box{
+        margin: 2.5rem;
+    }
+    .box-2{
+        margin-bottom: 6rem;
     }
 }
