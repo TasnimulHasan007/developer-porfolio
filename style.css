@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 :root{
-    --accent-color: tomato;
-    --button-bg: linear-gradient(45deg, lightsalmon, tomato);
+    --accent-color: rgb(250,140,110);
+    --gradient-1: linear-gradient(180deg, rgb(250,140,110), rgb(255,100,90));
+    --gradient-2: linear-gradient(180deg, rgb(10,220,220), rgb(60,150,250));
     --text-color: rgb(150,150,150);
 }
 
@@ -40,10 +41,14 @@ body{
 }
 
 h1{
-    font-size: 3.3rem;
+    font-size: 3.2rem;
     font-weight: 400;
     line-height: 6.5rem;
     margin-bottom: 2.5rem;
+}
+
+.section-3 h1{
+    line-height: 3.5rem;
 }
 
 .highlight{
@@ -92,6 +97,36 @@ p{
 
 .section-2{
     background: url(./images/dream-bg.png) no-repeat right bottom;
+}
+
+.section-3{
+    background: url(./images/exp-bg.png) no-repeat left top;
+}
+
+.box{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 0 1rem 1rem 0;
+    min-height: 28rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-1{
+    z-index: 1;
+    border-left: 0.5rem solid;
+    border-image: var(--gradient-2);
+    border-image-slice: 1;
+}
+
+.box-2{
+    z-index: 2;
+    border-left: 0.5rem solid;
+    border-image: var(--gradient-1);
+    border-image-slice: 1;
 }
 
 @media (max-width: 875px) {
